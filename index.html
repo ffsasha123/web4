@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космічні запуски (Лабораторна 4)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 min-h-screen p-4 md:p-8 text-gray-800">
+
+    <div class="max-w-3xl mx-auto bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-200">
+        <h1 class="text-3xl font-bold mb-6 text-center text-indigo-900">Пошук космічних запусків 🚀</h1>
+
+        <div class="flex flex-col md:flex-row gap-3 mb-6">
+            <input type="text" id="keyword" placeholder="Введіть ключове слово (напр., Falcon, Apollo)"
+                   class="flex-1 border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition shadow-sm">
+            <button id="search-btn" class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-indigo-700 transition shadow-md">
+                Знайти
+            </button>
+        </div>
+
+        <div id="error-msg" class="hidden bg-red-100 text-red-700 border-l-4 border-red-500 p-4 rounded mb-6 font-medium"></div>
+        <div id="loading" class="hidden text-center text-indigo-600 font-semibold mb-6 animate-pulse">Виконується пошук...</div>
+
+        <ul id="results" class="space-y-4"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

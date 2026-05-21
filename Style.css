@@ -1,0 +1,10 @@
+﻿/* Базові налаштування шрифтів */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Якщо Tailwind не завантажиться, список все одно не матиме дефолтних крапок */
+#results {
+    list-style-type: none;
+    padding: 0;
+}
